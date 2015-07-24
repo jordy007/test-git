@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Casino lobby </title>
+                <style>
+					    header li a { text-decoration: none;}
+						header img { margin-top:10px;margin-left:10px;}
+						header ul {width:100%;}
+						header p { font-family:Verdana;padding:2px; }
+						header li { display:inline-block; border: 1px solid green; border-radius:5px; margin-bottom:10px; margin-right:10px; text-align:center;}
+						header li:hover { background:green; color:white; }
+					    .searchbar { margin: 1em;}
+				        ul, menu { -webkit-margin: 0; -webkit-padding-start: 0px;}
+						.joc { display:block; width:100%; max-height:300px; margin: 0 0 1em 0; list-style-type: none; text-align:center; position:relative; box-sizing:border-box; padding:5px; max-width:500px;                                  margin-bottom:5px; background:grey; color:white; clear:both; min-height:100px;}
+				        .content { width:100%;}
+					    .description {display:block; top:50px; padding-top:10px; font-size:16px; margin:2px 0;}
+				        .gameName p { position:absolute; left:45%; top:0; margin-bottom:15px;   font-family: 'Roboto', sans-serif;  font-weight: bold;}
+						.joc img {  position:relative; box-sizing:border-box; width:40%;min-height:90px; float:left; }
+						.playNow {display:none; position:absolute; top: 30%; left: 5%; margin: 0 auto; background:white; width:30%; color:black;font-family: 'Roboto', sans-serif; font-weight:bold; border:1px                                     solid darkgreen; padding:2px;  }
+					    .joc img:hover { -webkit-filter: grayscale(100%);  -moz-filter: grayscale(100%); }
+					    .joc:hover .playNow {display:block; }
+					    .playNow:hover { background:yellow; }
+					    @media(min-width:250px) { .description{display:block; color:white; padding:0;}}
+					    @media(min-width:250px)and (max-width:399px) { .description { position: absolute; top:30px; left:45%; text-align:left; margin-top:10px;} .gameName { color:greenyellow } }
+					    @media(min-width:400px) {  .gameName p{ position:absolute; left:5px; top:111px; padding:5px; color:white; background:black;  font-family: 'Roboto', sans-serif;  font-weight: bold;                                                             }
+						                           .joc { display:block; width:100%; max-height:300px; margin: 0 0 1em 0; list-style-type: none; text-align:center; position:relative; box-sizing:border-box;
+							                              padding:5px; max-width:500px; background:grey; clear:none;}
+						                           .content { width:100%;}
+						                           .playNow { display:none;}
+						                           .joc img {  position:relative; box-sizing:border-box; width:100%; height:150px; float:none; }
+						                           .playNow {position:absolute; top: 30%; left: 20%; margin: 0 auto; background:white; width:60%; color:black;font-family: 'Roboto', sans-serif; font-weight:bold;
+                                                   border:1px solid darkgreen; padding:5px;  }
+						                           .joc:hover img { -webkit-filter: grayscale(100%);  -moz-filter: grayscale(100%); }
+						                           .joc:hover .playNow {display:block; }
+						                           .playNow:hover { background:yellow; }
+						                           .description {color:white; font-size:18px;}
+					                            }
+					    @media(min-width:500px) { .joc {float:left; width:33.33%; background:white; }.description { display:none;} .playNow { top: 50%;} }
+						@media(min-width: 700px) { .joc {float:left; width:25%; }
+						                            header img {float:left;} header ul { width:50%;float:right; } .searchbar { clear:both;}
+						                         }
+
+						@media (min-width:1000px) { .joc {width:20%;}
+							                        .gameName p { position:absolute; left:5px; top:85%; background:white;color:black;  font-family: 'Roboto', sans-serif;  font-weight: bold;}}
+					
+                         						
+                        	
+                </style>
+	</head>
+	<body>
+		    <div class="framework">
+               <header>
+                    <img src="https://everymatrix.com/wp-content/themes/everymatrix-redesign/img/redesign/logo-everymatrix.png" />
+                    <div class="menu">
+				      <ul>
+ 					   <li><a href="https://www.jetbull.com/Casino/"><p>Casino Home</p></a></li>
+					   <li><a href="https://www.jetbull.com/Promotions/home/casino"><p>Promotions</p></a></li>
+					   <li><a href="https://www.jetbull.com/casino/jackpots"><p>Jackpots</p></a></li>
+				       <li><a href="http://help-ro.jetbull.com/category/357-casino"><p>FAQ</p></a></li>	
+  				      </ul>						
+		            </div> 
+					<div class="searchbar"> 
+						  <form id="searchbox" action="">
+                             <input id="search" type="text" placeholder="Type here">
+                             <input id="submit" type="submit" value="Search">
+                          </form>		
+                    </div> 	
+			        
+               </header>
+                    <div class="content">
+
+ 					    <div class="joc"> <img src="http://static.gammatrix.com/_casino/8/84DF7377DB24D5E93EC5C0D648AD6572.jpg" />
+							<div class="gameName"><p>Starburst</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+                        <div class="joc"> <img src="http://static.gammatrix.com/_casino/E/EEF7CDD0A055C75AD01461E87E5F524D.jpg" />
+						     <div class="gameName"><p>Pistoleras</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div class="joc"> <img src="http://static.gammatrix.com/_casino/1/1AF169FF3DBF3256D72655A3B04A7464.jpg" />
+						     <div class="gameName"><p>Spinata Grande</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+	                    <div class="joc"> <img src="http://static.gammatrix.com/_casino/3/35CBB909050253FC6878183AB144D437.jpg" />
+						     <div class="gameName"><p>Bingo Billions</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+	                    <div  class="joc"> <img src="http://static.gammatrix.com/_casino/D/DD18E002D1B378331D3214376C3CDC9F.jpg" />
+						     <div class="gameName"><p>Champion's Goal</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+	                    <div class="joc"> <img src="http://static.gammatrix.com/_casino/4/4C439F796CB1D426D36965ADCA7C6E75.jpg" />
+						     <div class="gameName"><p>Stickers</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+			            <div  class="joc"> <img src="http://static.gammatrix.com/_casino/7/7D1EBF6C7202E4DAE0180B98489C3445.jpg" />
+						     <div class="gameName"><p>Hound Hotel</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+			            <div  class="joc"> <img src="http://static.gammatrix.com/_casino/0/01C36C636DF44225D72AE4CD1D3AC5B5.jpg" />
+						     <div class="gameName"><p>Kitty Cabana</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+			            <div  class="joc"> <img src="http://static.gammatrix.com/_casino/A/AC3D7D6BA088BF8861FC41D956A4A0FD.jpg" />
+						     <div class="gameName"><p>Ariana</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+			            <div < class="joc"> <img src="http://static.gammatrix.com/_casino/6/65CC391299364B0DAB5DECED952D8A3F.jpg" />
+						     <div class="gameName"><p>Ragnarok</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/9/9123E25F2B68A0AA8A6091842E8FD401.jpg" />
+						     <div class="gameName"><p>100 cats</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/9/9FFE8C80840472EAFC735DDBFEBCFB3F.jpg" />
+						     <div class="gameName"><p>Chain Mail</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/C/C230300DC14289FF44AA0B9BA9908538.jpg" />
+						     <div class="gameName"><p>Hot as Hades</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/4/4EA1D04347B0290A79C72A5DD61C1188.jpg" />
+						     <div class="gameName"><p>Dragon's Myth</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/2/2D02A0FE599D400E468D4ED0FA2C3558.jpg" />
+						     <div class="gameName"><p>Steam Tower</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/5/5849CBB79E4E21D0938B541FAA2F757F.jpg" />
+						     <div class="gameName"><p>Dracula</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/2/21B8664D73FC8C0E03D3F93F1DD74497.jpg" />
+						     <div class="gameName"><p>Miss White</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/4/46A4ADC33FC4944AA6AD2802E0BBE056.jpg" />
+						     <div class="gameName"><p>Gorilla Go Wild</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/A/A647FBB5C7B894160F37D2CE8241A7F3.jpg" />
+						     <div class="gameName"><p>Forsaken Kingdom</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+		                <div  class="joc"> <img src="http://static.gammatrix.com/_casino/3/3E9C2F38D1046B1DB7E43D3636613B57.jpg" />
+						     <div class="gameName"><p>Neon Staxx</p></div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p class="playNow">Play Now!</p>
+						</div>
+					
+                      	  	 				
+                    </div>
+			</div>		
+	</body>
+</html>
